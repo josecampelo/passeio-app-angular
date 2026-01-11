@@ -1,1 +1,16 @@
-<p>galeria works!</p>
+<main class="max-w-7xl mx-auto p-6">
+  <header class="mb-8">
+    <h1 class="text-3xl font-extrabold text-slate-900">Galeria</h1>
+  </header>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+    @for (lugar of lugares; track lugar.id) {
+      <app-lugar-card [lugar]="lugar"></app-lugar-card>
+    } 
+    @empty {
+      <div class="col-span-full text-center py-20 bg-slate-50 rounded-3xl border-2 border-dashed border-slate-200">
+        <p class="text-slate-400">Nenhum lugar encontrado.</p>
+      </div>
+    }
+  </div>
+</main>

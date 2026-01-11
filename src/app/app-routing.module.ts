@@ -13,6 +13,10 @@ const routes: Routes = [
   {
     path: 'galeria',
     loadChildren: () => import('./pages/galeria/galeria.module').then(m => m.GaleriaModule)
+  },
+  { 
+    path: '', 
+    redirectTo: 'galeria', pathMatch: 'full' 
   }
 ];
 
