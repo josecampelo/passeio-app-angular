@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { LugaresRoutingModule } from './lugares-routing.module';
 import { LugarFormComponent } from './components/lugar-form/lugar-form.component';
-
+import { ReactiveFormsModule } from '@angular/forms'
 
 @NgModule({
   declarations: [
@@ -11,7 +11,8 @@ import { LugarFormComponent } from './components/lugar-form/lugar-form.component
   ],
   imports: [
     CommonModule,
-    LugaresRoutingModule
+    LugaresRoutingModule,
+    ReactiveFormsModule
   ]
 })
 export class LugaresModule { }
