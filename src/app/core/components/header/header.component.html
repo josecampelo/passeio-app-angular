@@ -1,7 +1,7 @@
 <header class="bg-white border-b border-gray-100">
   <nav class="container mx-auto px-4 h-16 flex items-center justify-between"> 
     
-    <div class="flex items-center gap-2 cursor-pointer group">
+    <div routerLink="/galeria" class="flex items-center gap-2 cursor-pointer group">
       <div class="w-10 h-10 bg-sky-600 rounded-lg flex items-center justify-center text-white font-bold text-xl group-hover:bg-sky-700 transition-colors">
         P
       </div>
@@ -11,13 +11,28 @@
     <div class="flex items-center gap-8">
       <ul class="hidden md:flex items-center gap-8 text-sm text-slate-500 font-medium">
         <li>
-          <span class="hover:text-sky-600 transition-colors cursor-pointer border-b-2 border-transparent hover:border-sky-600 pb-1">Galeria</span>
+          <a 
+            routerLink="/galeria" 
+            routerLinkActive="text-sky-600 border-sky-600" 
+            class="hover:text-sky-600 transition-colors cursor-pointer border-b-2 border-transparent pb-1">
+            Galeria
+          </a>
         </li>
         <li>
-          <span class="hover:text-sky-600 transition-colors cursor-pointer border-b-2 border-transparent hover:border-sky-600 pb-1">Categorias</span>
+          <a 
+            routerLink="/categorias" 
+            routerLinkActive="text-sky-600 border-sky-600" 
+            class="hover:text-sky-600 transition-colors cursor-pointer border-b-2 border-transparent pb-1">
+            Categorias
+          </a>
         </li>
         <li>
-          <span class="hover:text-sky-600 transition-colors cursor-pointer border-b-2 border-transparent hover:border-sky-600 pb-1">Lugares</span>
+          <a 
+            routerLink="/lugares" 
+            routerLinkActive="text-sky-600 border-sky-600" 
+            class="hover:text-sky-600 transition-colors cursor-pointer border-b-2 border-transparent pb-1">
+            Lugares
+          </a>
         </li>
       </ul>
 
