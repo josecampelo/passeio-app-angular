@@ -1,11 +1,11 @@
 import { Component, OnInit, inject } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { LugarService } from '../../services/lugar.service';
-import { CategoriaService } from '../../../categorias/services/categoria.service';
+import { LugarService } from '../../../../core/services/lugar.service';
+import { CategoriaService } from '../../../../core/services/categoria.service';
 import { EstadosIBGEService } from '../../../../core/services/estados-ibge.service';
-import { Lugar } from '../../models/lugar';
-import { Categoria } from '../../../categorias/models/categoria';
+import { Lugar } from '../../../../core/models/lugar';
+import { Categoria } from '../../../../core/models/categoria';
 import { EstadoIBGE } from '../../../../core/models/estado-ibge';
 
 @Component({

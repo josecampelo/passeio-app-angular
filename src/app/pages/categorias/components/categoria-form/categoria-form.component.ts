@@ -1,8 +1,8 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { CategoriaService } from '../../services/categoria.service';
-import { Categoria } from '../../models/categoria';
+import { CategoriaService } from '../../../../core/services/categoria.service';
+import { Categoria } from '../../../../core/models/categoria';
 
 @Component({
   selector: 'app-categoria-form',
